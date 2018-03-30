@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Localizacion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jOt-Ay-Ze8">
+                                <rect key="frame" x="-1" y="0.0" width="375" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jOt-Ay-Ze8" secondAttribute="trailing" constant="1.1499999999999999" id="0ix-Fh-9g0"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jOt-Ay-Ze8" secondAttribute="bottom" constant="8" symbolic="YES" id="6uB-fk-dJ7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jOt-Ay-Ze8" secondAttribute="trailing" id="JcI-E7-4oq"/>
+                            <constraint firstAttribute="bottom" secondItem="jOt-Ay-Ze8" secondAttribute="bottom" id="Jvc-hm-ldN"/>
+                            <constraint firstItem="jOt-Ay-Ze8" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Wae-bd-cFg"/>
+                            <constraint firstItem="jOt-Ay-Ze8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="-1.1499999999999999" id="Z0G-V7-Pqn"/>
+                            <constraint firstItem="jOt-Ay-Ze8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="dq7-Rn-DV6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jOt-Ay-Ze8" secondAttribute="bottom" constant="67" id="gKh-f7-h8z"/>
+                            <constraint firstItem="jOt-Ay-Ze8" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="iEr-gs-V9R"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6uB-fk-dJ7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="jOt-Ay-Ze8" id="EnU-fq-MXX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="65.217391304347828"/>
+        </scene>
+    </scenes>
+</document>
